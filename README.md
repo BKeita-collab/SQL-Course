@@ -1,6 +1,5 @@
 # SQL-Course
 Ce cours est destiné à l'apprentissage des bases de données spatiales pour débutant et intermédiaire. 
-
 >>>>>>> e6515b0... Objectifs de la formation
 
 Ce cours est destiné à l'apprentissage des bases de données spatiales pour débutant et intermédiaire.
@@ -39,3 +38,5 @@ Pas de préréquis à avoir juste votre motivation
 >>>>>>> update-course
 =======
 >>>>>>> e6515b0... Objectifs de la formation
+=======
+>>>>>>> 04b880d... Initial commit
