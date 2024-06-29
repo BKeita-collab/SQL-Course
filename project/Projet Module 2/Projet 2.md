@@ -40,5 +40,5 @@ Dans ce 2e sous-projet, nous travaillerons sur l'analyse syntaxique et relationn
 
 ## Bonus
 
-* Classer les restaurants par catégories (*préférence elévée*: plus de 5 clients dans la liste , *préférence moyenne*: entre 3 et 5 clients dans la liste, *préférence basse*: moins de 3 clients dans la liste).
+* Classer les restaurants par catégories (*préférence elévée*: plus de 5 clients dans la liste , *préférence moyenne*: entre 3 et 5 clients dans la liste, *préférence faible*: moins de 3 clients dans la liste).
 * Exporter la table restaurant au format **.*csv***

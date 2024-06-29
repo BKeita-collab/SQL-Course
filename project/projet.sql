@@ -195,29 +195,91 @@ SELECT resto."Id_Restaurant", COUNT(cl.id_client) AS count_client
 VACUUM VERBOSE ANALYZE projet.restaurants; 
 
 ---- BONUS 
+ALTER TABLE projet.restaurants
+DROP COLUMN appreciation; 
 
 ALTER TABLE projet.restaurants
-ADD COLUMN character varying NOT NULL; 
+ADD COLUMN appreciation character varying; 
 
-CREATE VIEW temp_resto
+CREATE INDEX fki_restaurants ON projet.restaurants ("Id_Restaurant", id_franchise, "Score", appreciation );
+CREATE INDEX fki_client ON projet."Client" (id_client, date );
+
+EXPLAIN ANALYZE
 WITH count_client AS(
 	SELECT COUNT(cl.id_client) AS count_client
 	FROM projet."Client" AS cl INNER JOIN projet.restaurants AS resto
 	ON  cl."id_Restaurant" = resto."Id_Restaurant"
 	GROUP BY (resto."Id_Restaurant")
-) 
-	WITH temp_resto AS (
+	ORDER BY count_client
+), 
+	appreciation_restaurants AS(
+	SELECT 
+	CASE 
+		WHEN count_client.count_client > 5 THEN 'préférence elévée'
+		WHEN count_client.count_client < 3 THEN 'préférence elévée'
+		ELSE 'préférence moyenne'
+	END AS appreciation_resto
+	FROM count_client)
+
+	UPDATE projet.restaurants
+	SET appreciation = appreciation_restaurants.appreciation_resto
+	
+	FROM projet.restaurants AS resto, appreciation_restaurants
+/*
+	temp_resto AS (
 	SELECT resto."Id_Restaurant", resto.id_franchise, resto.latitude, resto.longitude, resto."Score", 
 		count_client.count_client 
 	FROM projet.restaurants AS resto, count_client)
 
 UPDATE projet.restaurants
-SET Score = RANDOM()*3+2; 
+SET appreciation = 
+	CASE 
+		WHEN count_client.count_client > 5 THEN 'préférence elévée'
+		WHEN count_client.count_client < 3 THEN 'préférence elévée'
+		ELSE 'préférence moyenne'
+	END
+FROM projet.restaurants AS resto, count_client
+
+*/
+
+
+-------------------------------------
+-----------PROJET 3------------------
+-------------------------------------
+
+----
+ALTER TABLE projet.restaurants 
+ADD COLUMN geom geometry('POINT', 2163); 
+
+UPDATE projet.restaurants
+SET geom = ST_Transform(ST_SetSRID(ST_Point(longitude,latitude),4326),2163)
+
+-- Nous allons utiliser le terminal pour intégrer les données dans la table route
+-- shp2pgsql "SQL-Course/data/Module 3/roadtrl020.shp" projet.route | psql -U postgres -d brahimakeita
+DROP TABLE IF EXISTS projet.route; 
+CREATE TABLE projet.route (
+	gid integer NOT NULL,
+	feature character varying(80),
+	name character varying(120),
+	state character varying(2),
+	geom geometry(multilinestring,2163),
+	CONSTRAINT pk_route PRIMARY KEY (gid)
+	);
+
+
+
+--- 
+SELECT resto."Id_Restaurant", route.gid, route.name, route.state, resto.geom <-> route.geom AS dist
+	FROM projet.restaurants AS resto, projet.route AS route
+	WHERE ST_DWithin(resto.geom, route.geom, 1.6*10)
+	AND route.feature LIKE 'Principal Highway%';
 
 
 
 
+select st_crs(resto.geom)
+FROM projet.restaurants AS resto
 
 
-
+SHOW SERVER_VERSION;
 
