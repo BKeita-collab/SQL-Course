@@ -2,10 +2,10 @@
 
 ## Définition de la notion de donnée et de base de donnée
 
-* **Une donnée: ** représentation d'une chose du monde ou *représentation d'une information stockée sous forme numérique ou sous forme papier*
-* **Une base de donnée: ** Dans le language courant, il s'agit d'un ensemble de donnée structurée. Dans le formalisme informatique et selon l'entreprise Oracle: *Une base de données est un ensemble d'informations qui est organisé de manière à être facilement accessible, géré et mis à jour*
-* Un SGBD : **Un système de gestion de** **base de donnée** (SGBD) est le logiciel qui permet à un ordinateur de stocker, récupérer, ajouter, supprimer et modifier des données. Le SGBD gère trois choses importantes : les données, le moteur de base de données qui permet d'accéder aux données, de les verrouiller et de les modifier, et le schéma de base de données, qui définit la structure logique de la base de données
-* Différence entre PostGreSQL et PgAdmin:
+* **Une donnée**:  représentation d'une chose du monde ou *représentation d'une information stockée sous forme numérique ou sous forme papier*
+* **Une base de donnée**: Dans le language courant, il s'agit d'un ensemble de donnée structurée. Dans le formalisme informatique et selon l'entreprise Oracle: *Une base de données est un ensemble d'informations qui est organisé de manière à être facilement accessible, géré et mis à jour*
+* **Un SGBD** : **Un système de gestion de** **base de donnée** (SGBD) est le logiciel qui permet à un ordinateur de stocker, récupérer, ajouter, supprimer et modifier des données. Le SGBD gère trois choses importantes : les données, le moteur de base de données qui permet d'accéder aux données, de les verrouiller et de les modifier, et le schéma de base de données, qui définit la structure logique de la base de données
+* **Différence entre PostGreSQL et PgAdmin**:
   * PostGreSQL: Système de gestion des bases de données relationnelles qui est utilisé pour stocker et gérer la donnée
   * PgAdmin: Un système graphique pour faciliter l'interrogation de PostGreSQL
 
