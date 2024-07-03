@@ -283,3 +283,6 @@ FROM projet.restaurants AS resto
 
 SHOW SERVER_VERSION;
 
+SELECT short_name, long_name
+FROM ST_GdalDrivers()
+ORDER BY short_name;

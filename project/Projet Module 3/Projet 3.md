@@ -38,4 +38,4 @@ Dans dernier sous-projet, nous travaillerons sur l'analyse spatiale en utilisant
 3. Pour cette partie nous cherchons à determiner des résultats en utilisant les requêtes SQL:
    * Quel est le système de coordonnée de la route?
    * Déterminer les restaurants qui sont à moins de 10km de toutes les autoroutes ?
-   * Bonus: **shp2pgsql "data/Module 3/roadtrl020.shp"**  **projet.route | psql -U postgres -d brahimakeita**
+   * Bonus:
