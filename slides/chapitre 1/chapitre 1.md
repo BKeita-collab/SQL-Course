@@ -15,7 +15,7 @@
 
 ### * Principe des bases de données
 
-Les bases de données sont basées sur trois principes: 
+Les bases de données sont basées sur trois principes:
 
 * **Le principe d’Atomicité** garantit la bonne exécution de la transaction. Les transactions de base de données, comme les atomes, peuvent être décomposées en plus petites parties. Si une partie d'une transaction échoue, toute la transaction sera annulée.
 * **La propriété de Cohérence** signifie que seules les données qui suivent des règles prédéfinies peuvent être écrites dans la base de données
@@ -43,7 +43,7 @@ Le Modèle conceptuel de donnée est une conception du schéma de la base de don
 * Entité: ce sont les entrées de la base de donnée
 * Association: ce sont les liaisons entres les entités de la base de données
 
-![1719990028314](image/chapitre1/1719990028314.png)
+![1720244165347](image/chapitre1/1720244165347.png)
 
 ### Logique Logique
 
@@ -51,13 +51,15 @@ Comme son nom l'indique, il s'agit du modèle de liaison entre éléments de la 
 
 Le modèle relationnel est un modèle où une entité d'une base de donnée est référencée dans une autre entité par une **clé étrangère**.
 
-![1719990051414](image/chapitre1/1719990051414.png)
+
+![1720244192614](image/chapitre1/1720244192614.png)
 
 ### Modèle Physique
 
 C'est le niveau naturel qui vient après l'élaboration de la logique relationnelle. Il s'agit concrètement de l'implementation de la base de donnée sous un SGBD.
 
-![1719990065305](image/chapitre1/1719990065305.png)
+
+![1720244292234](image/chapitre1/1720244292234.png)
 
 ### Exemples
 

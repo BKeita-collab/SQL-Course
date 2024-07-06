@@ -1,4 +1,4 @@
-# Chapitre 2: Le Language SQL 
+# Chapitre 2: Le Language SQL
 
 ## SQL Data Type
 
@@ -11,7 +11,7 @@
 | Number    | DOUBLE PRECISION | Pour les valeurs numériques                               |
 | Boolean   | BOOLEAN          | Deux valeurs TRUE ou FALSE                                 |
 
-### Change Data Type 
+### Change Data Type
 
 * CAST
 
@@ -26,7 +26,9 @@
 
 ## Requêtes SQL
 
-### Requête de création 
+Dans cette partie, nous traiterons de quelques requêtes, mais vous pourrez avoir une liste plus developpée [ici](https://sql.sh) 
+
+### Requête de création
 
 * CREATE
 
@@ -111,25 +113,153 @@ CREATE TABLE Customer(
   SET colonne_1 = 'valeur 1', colonne_2 = 'valeur 2', colonne_3 = 'valeur 3'
   WHERE condition;
   ```
-* CASCADE
 
 ### Export de données
 
 * COPY TO
 
+```sql
+COPY table_name TO 'file path' DELIMITER "," CSV HEADER;
+```
+
+```
+
+```
 
 ## Fonctions SQL et Jointures Syntaxiques
 
+### Clause SELECT et WHERE
+
+* SELECT : permet de selectionner et afficher des attributs
+
+```sql
+SELECT col1, col2,..., coln 
+	FROM table; 
+```
+
+SELECT DISTINCT : permet des valeurs de l'attribut
+
+WHERE
+
+```sql
+SELECT col1, col2,..., coln 
+	FROM table
+	WHERE condition1
+```
+
+AND
+
+```sql
+SELECT col1, col2,..., coln 
+	FROM table
+	WHERE condition1 AND condition2
+```
+
+OR
+
+```sql
+SELECT col1, col2,..., coln 
+	FROM table
+	WHERE condition1 OR condition2
+```
+
+IN
+
+```sql
+SELECT col
+	FROM table
+	WHERE col IN (val1, val2, ...,valN)
+```
+
+BETWEEN
+
+```sql
+SELECT col
+	FROM table
+	WHERE col BETWEEN val1 AND val2
+```
+
+LIKE
+
+```sql
+SELECT col1, col2,..., coln 
+	FROM table
+	WHERE col LIKE 'modele' ; 
+
+
+-- caractère se terminant par modele
+SELECT col1, col2,..., coln 
+	FROM table
+	WHERE col LIKE '%modele' ; 
+
+-- caractère commençant par modele
+SELECT col1, col2,..., coln 
+	FROM table
+	WHERE col LIKE 'modele%' ;
+
+-- caractère qui comprend modele
+SELECT col1, col2,..., coln 
+	FROM table
+	WHERE col LIKE '%modele%' ;
+
+-- caractère commençant par 'mo' et se terminant par 'le'
+SELECT col1, col2,..., coln 
+	FROM table
+	WHERE col LIKE 'mo%le' ;
+
+-- caractère quelconque entre 'm' et 'd'. Exemple: mad, mzd
+SELECT col1, col2,..., coln 
+	FROM table
+	WHERE col LIKE 'm_d' ;
+```
+
+ILIKE: permet de selectionner independamment de la CASE
+
 ### Fonctions d'aggregation
 
-* SUM, AVG
-* GROUP BY, ORDER BY,
-* HAVING
+Ces fonctions permettent des fonctions statistiques qui permettent d'appliquer une fonction sur plusieurs au même moment.
+
+* COUNT() , AVG(), MAX(), MIN(), SUM()
+
+  ```sql
+  SELECT fonction(nom_colonne) FROM nom_table; 
+
+  -- Exemple: 
+  SELECT COUNT(*) FROM table; 
+  ```
+* GROUP BY: c'est la fonction filtre et s'utilise avec les fonctions d'aggregation. **Attention**: L'attribut dans le GROUP BY doivent être dans la clause SELECT
+
+  ```sql
+  SELECT client, SUM(client)
+  	FROM achat 
+  	GROUP BY client; 
+  ```
+* ORDER BY: comme dans Excel, elle permet de trier le resultat
+
+  ```sql
+  SELECT client, SUM(client)
+  	FROM achat 
+  	GROUP BY client
+  	ORDER BY client ASC ; 
+  ```
+* HAVING : Il s'agit de la même clause que WHERE mais à la différence qu'elle s'applique aux fonctions d'aggregat
+
+  ```sql
+  SELECT client, SUM(client)
+  	FROM achat 
+  	GROUP BY client
+  	ORDER BY client
+  	HAVING COUNT(client) > 10 ; 
+  ```
 
 ### Contraintes
 
-* Clé Primaire
-* Clé Secondaire
+* Clé Primaire : C'est un attribut ou un ensemble d’attributs minimal identifiant de manière unique. Une clef candidate est un attribut ou un ensemble d’attributs minimal identifiant de manière unique chaque tuple d’une relation.
+
+  ```sql
+
+  ```
+* Clé étrangère : c'est une clé primaire dans la table parent
 * CASCADE
 * ```sql
   CREATE TABLE Authors (
@@ -173,8 +303,44 @@ CREATE TABLE Customer(
 
 ### Jointures syntaxiques
 
-* Types de Jointures
-* Syntaxe
+
+
+
+![1720159585484](image/chapitre2/1720159585484.png)
+
+### Divers requêtes 
+
+* CASE : c'est la clause "Si/Sinon"
+
+```sql
+CASE a 
+       WHEN 1 THEN 'un'
+       WHEN 2 THEN 'deux'
+       WHEN 3 THEN 'trois'
+       ELSE 'autre'
+END
+
+
+-- Exemple 
+SELECT id, nom, marge_pourcentage, prix_unitaire, quantite, 
+    CASE 
+      WHEN marge_pourcentage=1 THEN 'Prix ordinaire'
+      WHEN marge_pourcentage>1 THEN 'Prix supérieur à la normale'
+      ELSE 'Prix inférieur à la normale'
+    END
+FROM `achat`
+```
+
+
+* LIMIT et OFFSET
+  * LIMIT : c'est le nombre de resultat à retourner
+  * OFFSET : c'est le decalage
+
+```sql
+SELECT *
+FROM table
+LIMIT 10 OFFSET 5
+```
 
 ## Requêtes Avancées
 
@@ -198,10 +364,8 @@ WITH table_temporaire AS (
 		FROM table, table_temporaire
 ```
 
-
-
-```
-UPDATE table
+```sql
+UPDATE table1
 SET colonne_1 = 'valeur 1', colonne_2 = 'valeur 2', colonne_3 = 'valeur 3'
-WHERE condition
+WHERE condition1;
 ```
