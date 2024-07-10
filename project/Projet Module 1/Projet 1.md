@@ -34,9 +34,11 @@ Dans ce 1er sous-projet, nous travaillerons sur l'analyse fonctionnnel pour l'é
 
 ## Consignes 
 
-1. Un restaurant peut être d'une des ces différentes catégories: Fast-Food, Restaurant gastronomique, Restaurant Africain, Restaurant à emporter
-2. Un restaurant peut appartenir à une chaine de restaurant qui a plusieurs franchises. Les franchises represente la marque du restaurant. Par exemple McDonalds est une marque mais a plusieurs restaurants à travers le monde
-3. Une route aussi peut avoir plusieurs catégories
+Une franchise est une chaine de restauration comme McDonalds, ou DabaliExpress.
+
+1. Une franchise a plusieurs restaurants mais unn restaurant appartient à une et une et une seule franchise
+2. Un client peut manger dans un ou plusieurs restaurants et un restaurant peut accueillir un ou plusieurs 
+3. Une route a les attributs comme type, nom... 
 
 A travers ces consignes, votre but sera de réaliser l'analyse fonctionnel et de modeliser la base de données. 
 
