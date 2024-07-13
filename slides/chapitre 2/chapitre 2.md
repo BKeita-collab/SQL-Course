@@ -119,7 +119,7 @@ CREATE TABLE Customer(
 * COPY TO
 
 ```sql
-COPY table_name TO 'file path' DELIMITER "," CSV HEADER;
+COPY table_name TO 'file path' DELIMITER ',' CSV HEADER;
 ```
 
 ```
