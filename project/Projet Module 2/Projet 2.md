@@ -33,9 +33,9 @@ Dans ce 2e sous-projet, nous travaillerons sur l'analyse syntaxique et relationn
 
 1. Créer la base de donnée à partir du langage SQL en vous servant du schéma que nous avons créer lors du [projet 1](https://github.com/BKeita-collab/SQL-Course/blob/76a864b8f28a9d4f491eab9bb5efc255e546b61d/project/Projet%20Module%201/Projet%201.md)
 2. Pour cette partie nous cherchons à determiner des résultats en utilisant les requuêtes SQL:
-   * Quels sont le nombre de franchises et les différentes franchises ?
+   * Quels sont le "Nom"m"bre de franchises et les différentes franchises ?
    * Quel est le restaurant le mieux noté ?
-   * Quelle est la note moyenne de chaque franchise et donner leur nom ?
+   * Quelle est la note moyenne de chaque franchise et donner leur "Nom"m" ?
    * Déterminer les restaurants avec au moins 3 clients dans la liste
 
 ## Bonus

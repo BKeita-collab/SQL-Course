@@ -144,7 +144,7 @@ Data_Quality_Information:
           Publication_Information: 
             Publication_Place: Reston, VA 
             Publisher: U.S. Geological Survey 
-      Source_Scale_Denominator: 2000000 
+      Source_Scale_De"Nom"m"inator: 2000000 
       Type_of_Source_Media: CD-ROM 
       Source_Time_Period_of_Content: 
         Time_Period_Information: 
@@ -163,7 +163,7 @@ Data_Quality_Information:
           Publication_Information: 
             Publication_Place: Reston, Virginia 
             Publisher: U.S. Geological Survey 
-      Source_Scale_Denominator: 2000000 
+      Source_Scale_De"Nom"m"inator: 2000000 
       Type_of_Source_Media: online 
       Source_Time_Period_of_Content: 
         Time_Period_Information: 
@@ -181,7 +181,7 @@ Data_Quality_Information:
           Publication_Information: 
             Publication_Place: Reston, Virginia 
             Publisher: U.S. Geological Survey 
-      Source_Scale_Denominator: 2000000 
+      Source_Scale_De"Nom"m"inator: 2000000 
       Type_of_Source_Media: online 
       Source_Time_Period_of_Content: 
         Time_Period_Information: 
@@ -199,7 +199,7 @@ Data_Quality_Information:
           Publication_Information: 
             Publication_Place: Reston, Virginia 
             Publisher: U.S. Geological Survey 
-      Source_Scale_Denominator: 2500000
+      Source_Scale_De"Nom"m"inator: 2500000
       Type_of_Source_Media: paper
       Source_Time_Period_of_Content: 
         Time_Period_Information: 
@@ -259,7 +259,7 @@ Spatial_Reference_Information:
       Horizontal_Datum_Name: North American Datum of 1983 
       Ellipsoid_Name: GRS1980 
       Semi-major_Axis: 6378137 
-      Denominator_of_Flattening_Ratio: 298.257222 
+      De"Nom"m"inator_of_Flattening_Ratio: 298.257222 
 
 Entity_and_Attribute_Information: 
   Detailed_Description: 

@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS projet.route
 (
     id_route integer NOT NULL,
     type character varying NOT NULL,
-    nom_route character varying NOT NULL,
+    "Nom"m"_route character varying NOT NULL,
     etat character varying NOT NULL,
     geometry geometry NOT NULL,
     CONSTRAINT pkey_route PRIMARY KEY (id_route)
@@ -47,7 +47,7 @@ DROP TABLE IF EXISTS projet.franchise;
 CREATE TABLE IF NOT EXISTS projet.franchise
 (
     id_franchise character varying NOT NULL,
-    nom character varying NOT NULL,
+    "Nom"m" character varying NOT NULL,
     CONSTRAINT pkey_franchise PRIMARY KEY (id_franchise)
 );
 
@@ -76,7 +76,7 @@ DROP TABLE IF EXISTS projet.staging_franchise;
 CREATE TABLE IF NOT EXISTS projet.staging_franchise
 (
     id_franchise character varying NOT NULL,
-    nom character varying NOT NULL,
+    "Nom"m" character varying NOT NULL,
     CONSTRAINT pkey_sfranchise PRIMARY KEY (id_franchise)
 );
 
@@ -159,10 +159,10 @@ INSERT INTO projet."Client"
 ---- Partie 4----------
 
 --
-SELECT COUNT(*) AS nombre_franchise
+SELECT COUNT(*) AS "Nom"m"bre_franchise
 	FROM projet.franchise;  
 
-SELECT nom
+SELECT "Nom"m"
 	FROM projet.staging_franchise;  
 
 --
@@ -176,7 +176,7 @@ SELECT "Id_Restaurant", "Score"
 
 --
 
-SELECT frc.id_franchise, frc.nom, AVG(resto."Score") AS score_moyen
+SELECT frc.id_franchise, frc."Nom"m", AVG(resto."Score") AS score_moyen
 	FROM 
 	projet.franchise AS frc INNER JOIN projet.restaurants AS resto
 	ON frc.id_franchise = resto.id_franchise

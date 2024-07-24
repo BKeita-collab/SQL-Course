@@ -47,7 +47,7 @@ Le Modèle conceptuel de donnée est une conception du schéma de la base de don
 
 ### Logique Logique
 
-Comme son nom l'indique, il s'agit du modèle de liaison entre éléments de la base de donnée. Le plus étant le modèle relationnel.
+Comme son "Nom"m" l'indique, il s'agit du modèle de liaison entre éléments de la base de donnée. Le plus étant le modèle relationnel.
 
 Le modèle relationnel est un modèle où une entité d'une base de donnée est référencée dans une autre entité par une **clé étrangère**.
 
@@ -72,7 +72,7 @@ Les entités pour cette base de donnée sont:
 * Membres
 * Emprunt
 
-Un livre a plusieurs attributs comme (num_livre, titre, genre, annee_pub, num_auteur). Un auteur a les attributs ( num_auteur, nom, date_naissance, nationalité) , un membre a pour attributs (num_membre, nom, address, num_telephone, email, date_inscription) et emprunt( num_emprunt, num_livre, num_membre, date_emprunt, date_retour_prevue, date_retour_effective)
+Un livre a plusieurs attributs comme (num_livre, titre, genre, annee_pub, num_auteur). Un auteur a les attributs ( num_auteur, "Nom"m", date_naissance, nationalité) , un membre a pour attributs (num_membre"Nom"Nom", address, num_telephone, email, date_inscription) et emprunt( num_emprunt, num_livre, num_membre, date_emprunt, date_retour_prevue, date_retour_effective)
 
 1. Déterminer les clés primaires et éventuellement les clés étrangères
 2. Établir les modèles conceptuelles de donnés

@@ -16,12 +16,12 @@
 * CAST
 
   ```sql
-  CAST(nom_colonne AS integer)
+  CAST("Nom"m"_colonne AS integer)
   ```
 * Syntaxe ( :: )
 
   ```sql
-  nom_colonne::integer
+  "Nom"m"_colonne::integer
   ```
 
 ## Requêtes SQL
@@ -71,40 +71,40 @@ CREATE TABLE Customer(
 
   ```sql
   -- ajouter une colonne 
-  ALTER TABLE nom_table
-  ADD nom_colonne type_donnees
+  ALTER TABLE "Nom"m"_table
+  ADD "Nom"m"_colonne type_donnees
 
   ALTER TABLE Customer
   ADD Salaire DOUBLE;
 
   -- changer le type de données
-  ALTER TABLE nom_table
-  ALTER COLUMN nom_colonne TYPE type_donnees
+  ALTER TABLE "Nom"m"_table
+  ALTER COLUMN "Nom"m"_colonne TYPE type_donnees
 
   ALTER TABLE Customer
   ALTER COLUMN LastName TYPE VARCHAR(25);
 
-  -- Renommer une colonne 
-  ALTER TABLE Customer RENAME CustomerName TO CustomerNom;
+  -- Re"Nom"m"mer une colonne 
+  ALTER TABLE Customer RENAME CustomerName TO Customer"Nom"m";
 
   ```
 * DELETE
 
   ```sql
   -- suppression par condition
-  DELETE FROM nom_table
+  DELETE FROM "Nom"m"_table
   WHERE condition; 
 
   -- tout supprimer
-  DELETE FROM nom_table; 
-  TRUNCATE TABLE nom_table; -
+  DELETE FROM "Nom"m"_table; 
+  TRUNCATE TABLE "Nom"m"_table; -
   ```
 
   Ici TRUNCATE réinitialise l'auto-incrementation contrairement à Delete
 * DROP
 
   ```sql
-  DROP TABLE nom_table;
+  DROP TABLE "Nom"m"_table;
   ```
 * UPDATE
 
@@ -222,7 +222,7 @@ Ces fonctions permettent des fonctions statistiques qui permettent d'appliquer u
 * COUNT() , AVG(), MAX(), MIN(), SUM()
 
   ```sql
-  SELECT fonction(nom_colonne) FROM nom_table; 
+  SELECT fonction("Nom"m"_colonne) FRO"Nom"Nom"_table; 
 
   -- Exemple: 
   SELECT COUNT(*) FROM table; 
@@ -322,7 +322,7 @@ END
 
 
 -- Exemple 
-SELECT id, nom, marge_pourcentage, prix_unitaire, quantite, 
+SELECT id, "Nom"m", marge_pourcentage, prix_unitaire, quantite, 
     CASE 
       WHEN marge_pourcentage=1 THEN 'Prix ordinaire'
       WHEN marge_pourcentage>1 THEN 'Prix supérieur à la normale'
@@ -333,7 +333,7 @@ FROM `achat`
 
 
 * LIMIT et OFFSET
-  * LIMIT : c'est le nombre de resultat à retourner
+  * LIMIT : c'est le "Nom"m"bre de resultat à retourner
   * OFFSET : c'est le decalage
 
 ```sql
