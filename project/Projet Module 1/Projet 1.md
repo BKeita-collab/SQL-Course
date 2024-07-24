@@ -34,7 +34,7 @@ Dans ce 1er sous-projet, nous travaillerons sur l'analyse fonctionnnel pour l'é
 
 ## Consignes 
 
-1. Un restaurant peut être d'une des ces différentes catégories: Fast-Food, Restaurant gastronomique, Restaurant Africain, Restaurant à emporter
+1. Un restaurant peut être d'une des ces différentes catégories: Fast-Food, Restaurant gastro"Nom"m"ique, Restaurant Africain, Restaurant à emporter
 2. Un restaurant peut appartenir à une chaine de restaurant qui a plusieurs franchises. Les franchises represente la marque du restaurant. Par exemple McDonalds est une marque mais a plusieurs restaurants à travers le monde
 3. Une route aussi peut avoir plusieurs catégories
 

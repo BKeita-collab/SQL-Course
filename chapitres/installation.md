@@ -8,9 +8,9 @@
 * Cliquer sur Installer:
   * Lors de l'installation, arrivé à cette étape: il faut installation toutes les 4 composantes proposés
   * ![1717313891360](image/installation/1717313891360.png "Composantes de PostGreSQL")
-  * Et à cette étape, il faut créer son nom d'utilisateur et son mot de passe;
+  * Et à cette étape, il faut créer son "Nom"m" d'utilisateur et son mot de passe;
 
-    ![1717314235730](image/installation/1717314235730.png "Nom d'utilisateur et Mot de passe")
+    ![1717314235730](image/installation/1717314235730.png ""Nom"m" d'utilisateur et Mot de passe")
   * Pour le serveur, selectionner Local
   * Après le telechargement, cocher la case StackBuilder et ensuite PostGreSQL pour installer StackBuilder
 
@@ -21,7 +21,7 @@
 **Etape 2: Découverte**
 
 * Dans votre barre de recherche windows, rechercher : **PgAdmin 4**
-* Ensuite, rentrer les noms d'utilisateur et mot de passe
+* Ensuite, rentrer les "Nom"m"s d'utilisateur et mot de passe
 * Voilà nous êtes connectés
 
 Félicitations, vous venez d'installer PostGreSQL et PostGIS !
