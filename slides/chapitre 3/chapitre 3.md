@@ -61,16 +61,45 @@ PostGIS gère plusieurs format en entrée.
 * Les données de typologiques comme la représentation des parcelles
 * Les addresses
 
+## Système de référence
 
+Prenons le cas de deux personnes l'une à Abidjan et l'autre à Paris. Si la personne à Paris organise la réunion en Juin pour 14h cela correspondra à 12h pour la personne à Abidjan. Il s'agit en réalité du principe horaire par rapport au GMT car Abidjan est à GMT+0 et Paris à GMT+2.
 
-## Système de référence 
+Eh bien, le même concept existe pour les données géographiques il s'agit des système de référence. Il s'agit comme son "Nom"m" l'indique d'un référentiel pour chaque donnée géographique. Donc à chaque fois que je donne une donnée géographique, je donne par la suite le système dans lequel il est défini.
 
-Prenons le cas de deux personnes l'une à Abidjan et l'autre à Paris. Si la personne à Paris organise la réunion en Juin pour 14h cela correspondra à 12h pour la personne à Abidjan. Il s'agit en réalité du principe horaire par rapport au GMT car Abidjan est à GMT+0 et Paris à GMT+2. 
-
-Eh bien, le même concept existe pour les données géographiques il s'agit des système de référence. Il s'agit comme son "Nom"m" l'indique d'un référentiel pour chaque donnée géographique. Donc à chaque fois que je donne une donnée géographique, je donne par la suite le système dans lequel il est défini. 
-
-Un système de référence est composé: 
+Un système de référence est composé:
 
 * Coordonnée de référence: il s'agit du type de coordonnée. Elle peut être cartesienne ou même géographique en lat, lon, h essentiellement utilisé dans le gps, la cartographie
 * Ellipsoïde: c'est le modèle d'éllipsoïde pour répresente par exemple Clarke ou GRS80
 * Projection plane: Il s'agit du format papier c'est à dire le passage de la forme ellipsoïdale à la forme papier qui est utilisable sur papier
+
+## Validation Géométrie
+
+Certains objets peuvent avoir de mauvais qui sont de divers types. 
+
+### Geométries invalides
+
+* Données ponctuelles: pas de règle de validité
+* Pour la géométrie linéaire, la seule règle de validité est que `LINESTRING`s doit avoir au moins deux points et avoir une longueur non nulle (ou de manière équivalente, avoir au moins deux points distincts). Notez que les lignes non simples (auto-intersectées) sont valides.
+* Validité des polygones:
+
+  1. les anneaux de contour du polygone (l'anneau extérieur de la coque et les anneaux intérieurs des trous) sont *simples* (ils ne se croisent pas et ne se touchent pas). De ce fait, un polygone ne peut pas avoir de lignes de coupe, de pointes ou de boucles. Cela implique que les trous du polygone doivent être représentés comme des anneaux intérieurs, plutôt que par l'anneau extérieur qui se touche (un soi-disant "trou inversé").
+  2. les anneaux limites ne se croisent pas
+  3. les anneaux limites peuvent se toucher en certains points mais seulement de manière tangentielle (c'est-à-dire pas sur une ligne)
+  4. les anneaux intérieurs sont contenus dans l'anneau extérieur
+  5. l'intérieur du polygone est simplement connecté (c'est-à-dire que les anneaux ne doivent pas se toucher d'une manière qui divise le polygone en plusieurs parties)
+
+  ![1722082855573](image/chapitre3/1722082855573.png)
+* Validité des multipolygones:
+
+  1. ses éléments `POLYGON`sont valides
+  2. les éléments ne se chevauchent pas (c'est-à-dire que leurs intérieurs ne doivent pas se croiser)
+  3. les éléments ne se touchent qu'en des points (c'est-à-dire pas le long d'une ligne)
+
+![1722082898187](image/chapitre3/1722082898187.png)
+
+### Verification des géométries invalides
+
+La requête ST_Geometry permet de rechercher les géométries non valides conformement au standard de l'OGC
+
+### Correction de la géométrie
