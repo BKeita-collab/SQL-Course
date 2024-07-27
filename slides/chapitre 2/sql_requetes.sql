@@ -76,6 +76,7 @@ SELECT "IDVendeur" , SUM("Prix") AS sum_price
 
 
 -- ON CASCADE
+/*
 DELETE 
 	FROM "TransactionFonciere" 
 	WHERE "IDTransaction" = 'Trans1'; 
@@ -88,41 +89,61 @@ DELETE
 	FROM "Parcelle" 
 	WHERE "IDParcelle" = 'PARC1'
 	CASCADE;
-
+*/
 -----------ON CASCADE TABLE 
-CREATE TABLE Authors (
+CREATE TABLE "Authors" (
     AuthorID INT PRIMARY KEY,
     AuthorName VARCHAR(200)
 );
 
 
-CREATE TABLE Books (
+CREATE TABLE "Books" (
     BookID INT PRIMARY KEY,
     Title VARCHAR(255),
     AuthorID INT,
-    FOREIGN KEY (AuthorID) REFERENCES Authors(AuthorID) ON DELETE CASCADE
+    FOREIGN KEY (AuthorID) REFERENCES "Authors"(AuthorID) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-INSERT INTO Authors (AuthorID, AuthorName) VALUES (1, 'John Doe');
-INSERT INTO Authors (AuthorID, AuthorName) VALUES (2, 'Minal Pandey');
-INSERT INTO Authors (AuthorID, AuthorName) VALUES (3, 'Mahi Pandey');
+INSERT INTO "Authors" (AuthorID, AuthorName) VALUES (1, 'John Doe');
+INSERT INTO "Authors" (AuthorID, AuthorName) VALUES (2, 'Minal Pandey');
+INSERT INTO "Authors" (AuthorID, AuthorName) VALUES (3, 'Mahi Pandey');
 
-INSERT INTO Books (BookID, Title, AuthorID) VALUES (101, 'Introduction to SQL', 1);
-INSERT INTO Books (BookID, Title, AuthorID) VALUES (102, 'Database Fundamentals', 2);
-INSERT INTO Books (BookID, Title, AuthorID) VALUES (103, 'Advanced SQL', 2);
-INSERT INTO Books (BookID, Title, AuthorID) VALUES (104, 'Web Development', 3);
+INSERT INTO "Books" (BookID, Title, AuthorID) VALUES (101, 'Introduction to SQL', 1);
+INSERT INTO "Books" (BookID, Title, AuthorID) VALUES (102, 'Database Fundamentals', 2);
+INSERT INTO "Books" (BookID, Title, AuthorID) VALUES (103, 'Advanced SQL', 2);
+INSERT INTO "Books" (BookID, Title, AuthorID) VALUES (104, 'Web Development', 3);
 
 -----Requête --------------
 ---DELETE ON CASCADE
-DELETE FROM Authors WHERE AuthorID = 4;
+DELETE FROM "Authors" WHERE AuthorID = 3;
 ----UPDATE ON CASCADE
-UPDATE Authors SET AuthorID = 5 WHERE AuthorID = 2;
+UPDATE "Authors" SET AuthorID = 5 WHERE AuthorID = 2;
 ----INSERT ON CASCADE
-INSERT INTO Authors (AuthorID, AuthorName) VALUES (4, 'Sukumar Reddy');
-INSERT INTO Books (BookID, Title, AuthorID) VALUES (105, 'Data Science', 4);
+INSERT INTO "Authors" (AuthorID, AuthorName) VALUES (4, 'Sukumar Reddy');
+INSERT INTO "Books" (BookID, Title, AuthorID) VALUES (105, 'Data Science', 4);
+
+--- SQL INNER JOIN 
+
+SELECT * 
+	FROM "Parcelle" INNER JOIN "Proprietaire"
+	ON "Parcelle"."IDProprietaire" = "Proprietaire"."IDProprietaire"; 
+
+
+---Jointure de jointure 
+
+
+SELECT * 
+	FROM "Parcelle" INNER JOIN "Proprietaire"
+	ON "Parcelle"."IDProprietaire" = "Proprietaire"."IDProprietaire"
+	INNER JOIN "TypeSol" 
+	ON "Parcelle"."IDTypeSol" = "TypeSol"."IDTypeSol"
+	
 
 
 ---- JOINTURES SYNTAXIQUES
+ALTER TABLE "TransactionFonciere"
+DROP COLUMN "Categories"; 
+
 ALTER TABLE "TransactionFonciere"
 ADD "Categories" VARCHAR; 
 
@@ -130,16 +151,22 @@ ADD "Categories" VARCHAR;
 UPDATE "TransactionFonciere"
 	SET "Categories" = 
 	CASE 
-		WHEN "Prix" < 50000 THEN 'FAIBLE'
-		WHEN "Prix" = 50000 THEN 'MOYENNE'
-		ELSE 'ELEVEE'
+		WHEN "Prix" < 50000 THEN 'Prix abordable'
+		WHEN "Prix" = 50000 THEN 'Prix moyen'
+		ELSE 'Prix elevé'
 	END; 
 
 SELECT *
 	FROM "Proprietaire"
 	LIMIT 10 OFFSET 5 ; 
 
-
+SELECT * 
+	FROM "Proprietaire" 
+	INNER JOIN "TransactionFonciere" 
+	ON "Proprietaire"."IDProprietaire" = "TransactionFonciere"."IDAcheteur"
+	WHERE "Categories" = 'Prix elevé'
+	LIMIT 10 OFFSET 5
+	
 
 
 
