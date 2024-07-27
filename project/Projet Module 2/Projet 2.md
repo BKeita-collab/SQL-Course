@@ -31,9 +31,9 @@ Dans ce 2e sous-projet, nous travaillerons sur l'analyse syntaxique et relationn
 
 Les données sont disponibles sur ce lien: 
 
-* restaurants: [https://github.com/BKeita-collab/SQL-Course/blob/6b59475f3ffda7cfbc9ce1ca98ef9f156b0ebdf0/project/Projet%20Module%202/restaurants.csv](données restaurants csv)
-* franchises: [https://github.com/BKeita-collab/SQL-Course/blob/7e86589f9590780daed3b3406f65bf00c7747f54/project/Projet%20Module%202/franchises.csv](lien franchises csv)
-* Client : [https://github.com/BKeita-collab/SQL-Course/blob/7e86589f9590780daed3b3406f65bf00c7747f54/project/Projet%20Module%202/client_restaurant_data.csv](client csv)
+* restaurants: https://github.com/BKeita-collab/SQL-Course/blob/6b59475f3ffda7cfbc9ce1ca98ef9f156b0ebdf0/project/Projet%20Module%202/restaurants.csv
+* franchises: https://github.com/BKeita-collab/SQL-Course/blob/7e86589f9590780daed3b3406f65bf00c7747f54/project/Projet%20Module%202/franchises.csv
+* Client : https://github.com/BKeita-collab/SQL-Course/blob/7e86589f9590780daed3b3406f65bf00c7747f54/project/Projet%20Module%202/client_restaurant_data.csv
 
 ## Consignes
 
