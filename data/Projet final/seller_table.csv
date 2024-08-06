@@ -1,0 +1,468 @@
+seller_id,seller_name,seller_membership
+1,Marie DIOUF,2014-12-29
+2,Alassane SALL,2017-07-25
+3,Ousseynou Ndiaye,2021-05-12
+4,Michel BARZASI,2019-02-12
+5,NgonÃ© Thiandoum,2018-01-24
+6,Immosen,2015-08-28
+7,SPDI,2019-03-05
+8,KEUR IMMO SENEGAL,2019-01-10
+9,Saidou sarr,2020-05-06
+10,Probat BTP,2016-02-04
+11,Adjia Arame DIOP,2019-07-25
+12,ALMAU Services,2021-11-25
+13,Intermediaire immobilière,2012-02-02
+14,Ndeye Fatou Thiam,2018-05-09
+15,adja DIOP,2021-08-08
+16,serigne mbacke,2013-01-30
+17,ATLANTIC RESIDENCES,2019-03-20
+18,Sésame Immobilier,2015-12-04
+19,Habitat Square immobilier,2014-08-12
+20,Mame Diarra Bousso IMMO ,2020-02-20
+21,NDAO NEGOCE INTERNATIONAL,2022-01-09
+22,M. THIAM,2022-01-19
+23,Michel IMBERT,2011-06-08
+24,Facely Immobilier,2013-12-18
+25,Consultant Immobilier,2016-08-26
+26,Ibrahima Dianko,2022-03-23
+27,Confort Immo,2016-10-04
+28,Mamadou Sy,2021-10-12
+29,KEBE IMMOBILIER,2021-05-05
+30,La Sénégalaise de L'immobilier,2010-12-02
+31,Tidiane Faye,2011-06-28
+32,pape mamadou tall,2014-08-08
+33,Gaye Khady,2020-05-29
+34,Welcom-immobilier,2013-02-27
+35,Sané nfally,2022-03-08
+36,Chemaloyal Business,2018-01-19
+37,CERCLE DE L' IMMOBILIER,2020-08-12
+38,Atoo Group,2012-04-04
+39,8JET Trading,2021-09-28
+40,esteban audrain,2018-10-08
+41,Cid immobilier,2016-01-11
+42,3S Investissement,2017-07-10
+43,SAPHIR IMMOBILIER,2020-12-04
+44,Agence Angel,2011-02-25
+45,Moustapha gueye,2014-08-12
+46,Madame Diongue,2021-12-20
+47,Les Cles de l&#39;Immobilier(Mr Seila),2020-03-03
+48,Mansour Camara,2015-01-21
+49,TPS bazaar,2018-03-27
+50,Cabinet Foncier Immobilier,2018-04-24
+51,GIE FAGUEYE,2015-11-25
+52,Babacar DIOUF,2014-12-10
+53,Talux Group,2016-12-07
+54,DADDY IMMO,2017-05-28
+55,Kathy Capitte,2019-04-10
+56,Cheikhna DoucourÃ©,2020-01-16
+57,Omar Diagne,2015-01-04
+58,NOUR IMMO,2016-06-16
+59,LA RESIDENCE,2010-01-12
+60,MAK BUSINESS COMPANY,2021-11-30
+61,Murid solution,2018-06-19
+62,Glopis Immo,2019-10-28
+63,Homakys,2022-02-23
+64,Alhousseynou Lam,2019-10-23
+65,Awabac,2022-02-06
+66,Sen prix bas,2010-06-13
+67,Ndour Alassane Immo,2017-01-30
+68,BIGAME IMMO SARL,2013-12-15
+69,Diayalma Ameublement,2020-04-15
+70,LACROIX JEAN PAUL,2018-07-03
+71,Marème FAYE,2020-07-07
+72,africa immobilier,2013-07-24
+73,cabinet seti,2019-11-20
+74,BEST ARCHI BÂT AFRIQUE,2019-05-23
+75,Samb Moustapha,2020-12-22
+76,DACOSTA IMMOBILIER,2021-07-29
+77,MIJF,2020-12-07
+78,RÃ©fÃ©rence Habitat,2018-09-17
+79,Agence Diamane Immobiliere,2022-02-12
+80,Immo Kit Sénégal,2021-10-14
+81,ChiÃ©kh Mbaye,2015-03-23
+82,Agence Keur Nafi,2020-05-04
+83,INSA IMMO,2015-02-26
+84,Mme DIENG,2017-01-18
+85,l&#39;immobilier au senegal,2021-03-09
+86,Oumy,2021-10-13
+87,Yasmine Wazni,2020-01-28
+88,Agence Happy Home,2013-11-21
+89,Les Cles de l&#39;Immobilier(Mr Seila) ,2020-03-03
+90,Papa Thiam,2021-02-24
+91,DEKMANN IMMO,2012-07-19
+92,Mara Diouf,2019-08-29
+93,MAMY ,2022-01-26
+94,Anta BOLLAERT,2016-12-01
+95,Habiter .biz,2013-09-27
+96,Kaydeuk immo,2021-04-09
+97,abdoulaye,2015-01-28
+98,Sedis Building,2018-07-06
+99,CHEIKH.S.A.MALICK.DIOUF,2021-02-17
+100,Oulimata traorÃ©,2016-02-27
+101,Bravo Building,2021-12-06
+102,Mata,2021-09-02
+103,matar,2017-05-12
+104,Cabinet la casa construction,2019-04-03
+105,SCI Terra Nova,2012-10-05
+106,Sidy sall,2019-03-17
+107,Arcade Cap,2021-09-23
+108,Amadou Lamine Tall,2017-09-25
+109,Zale MBOUP,2021-07-13
+110,2S IMMOBILIER,2017-02-01
+111,Immobilier BA,2021-09-01
+112,Mayou Immo,2014-04-28
+113,La Courtière,2019-04-12
+114,Rï¿½gie Immo. Mugnier,2011-05-25
+115,MARIE CABRAL,2021-09-02
+116,Noreynii Ousmane,2015-01-18
+117,Catherine,2021-12-16
+118,Édouard Sagna,2021-12-17
+119,babacar samb,2014-07-31
+120,amath kane,2014-02-27
+121,Eden Immo Saly,2020-07-04
+122,MB ALL TRADING SERVICES SARL,2019-03-28
+123,TOUBA CONSTRUCTION ET GERANCE IMMOBILIERE,2021-05-04
+124,gaye samb,2010-02-09
+125,KERGOZIEN,2021-12-07
+126,NDAS,2021-11-04
+127,BB Immobilier,2021-10-26
+128,SENEGAL DISTRIBUTION SERVICES - Group,2018-12-07
+129,GERARD DABIN,2017-11-10
+130,Immobiliere Excellence,2017-11-16
+131,Immobiliere Excellence ,2017-11-16
+132,Galsen business,2021-04-23
+133,Moustapha Dieng,2021-10-26
+134,THIAM IMMO,2020-12-07
+135,Alassane Barry,2021-11-11
+136,AZIMUTS IMMO,2011-03-14
+137,Accueil Immobilier Ngaparou,2019-01-21
+138,Agence Immobiliere Yaye Aicha,2014-03-27
+139,FATIMA IMMO,2021-08-13
+140,Elite Mobilier,2015-04-15
+141,Immobilier la Lagune,2015-02-03
+142,RÃ©sidence Aliah,2017-03-08
+143,MAILLARD MICHEL,2018-12-21
+144,Soungho Immobilier,2018-12-10
+145,El Hadji Ndiaye,2018-07-15
+146,IMMO SERVICES NGAPAROU,2021-02-02
+147,Bineta Sow,2015-02-06
+148,STANDINGIMMOBILIER HANN MARISTE SARL,2015-10-07
+149,Expert Immo Prestige,2016-06-12
+150,Mohamed Sanou,2021-05-12
+151,DEM REK SARL,2019-07-29
+152, Lotus Immobilier,2017-02-27
+153,faye maha,2016-01-04
+154,BARIS DONMEZ,2020-09-26
+155,Residences Amani,2020-05-23
+156,Mame Diarra Bousso IMMO,2020-02-20
+157, Intermediaire immobilière,2012-02-02
+158,MAMY,2022-01-26
+159,Kaydeuk immo ,2021-04-09
+160, Probat BTP,2016-02-04
+161,Ndour Alassane Immo ,2017-01-30
+162,Lotus Immobilier,2017-02-27
+163, 3S Investissement,2017-07-10
+164,Appart. meuble AMD DAKAR,2016-08-17
+165,paco tounkara,2010-09-03
+166,Alassane SALL ,2017-07-25
+167,Mme Marie,2010-01-12
+168, THIAM IMMO,2020-12-07
+169, Samb Moustapha,2020-12-22
+170, Mayou Immo,2014-04-28
+171, paco tounkara,2010-09-03
+172, Talux Group,2016-12-07
+173,L&#39;excellence,2020-10-23
+174,Mamadou WANE,2011-12-26
+175,Le Courtier de Dakar,2021-04-27
+176,NVIBUILDING21,2016-01-22
+177,Résidence Faby Dakar,2021-04-13
+178,Madame seck,2013-12-16
+179,Facely Immobilier ,2013-12-18
+180,La Résidence,2010-01-12
+181,Abou NJIE,2016-04-10
+182,Diouf Diouf,2021-05-01
+183,Baila 2,2014-12-14
+184,NAOMI KASSE,2018-10-09
+185, amath kane,2014-02-27
+186,Mme TALL,2022-03-29
+187,DYWANES IMMOBILIER,2017-06-23
+188, Les Cles de l&#39;Immobilier(Mr Seila),2020-03-03
+189, Agence Angel,2011-02-25
+190, Amadou Lamine Tall,2017-09-25
+191,Amar Ap meublés,2014-10-31
+192,Dakar Appartement,2017-07-07
+193,Dabo immo,2020-03-10
+194,ALPHA,2012-05-14
+195,NENE CISSE,2017-07-18
+196,LOCRET ERIC,2022-03-31
+197, serigne mbacke,2013-01-30
+198,Samb Moustapha ,2020-12-22
+199,SCI Terra Nova ,2012-10-05
+200,africa immobilier ,2013-07-24
+201,Geny MAUPETIT,2017-12-27
+202,Murid solution ,2018-06-19
+203,Probat BTP ,2016-02-04
+204, DEKMANN IMMO,2012-07-19
+205,KNZ,2017-01-11
+206,Nazim bencheikh Lehocine,2022-03-31
+207,OFIMA,2010-07-23
+208, Ndeye Fatou Thiam,2018-05-09
+209, africa immobilier,2013-07-24
+210, KEUR IMMO SENEGAL,2019-01-10
+211,Pape-Hamet DIOP,2021-09-22
+212,ATLANTIC RESIDENCES ,2019-03-20
+213, Habitat Square immobilier,2014-08-12
+214,BRAVO BUILDING,2021-12-06
+215,zeina immobilier,2011-05-02
+216,CIC consulting,2018-11-25
+217,Golden Building,2015-02-27
+218,MM SERVICES,2021-10-10
+219,AD IMMOBILIER,2018-12-05
+220,Mbaye Dame,2019-05-21
+221,Fred Monneron,2015-09-04
+222,Nabou,2021-09-09
+223,NDOUR SOKHNA,2022-04-07
+224,Finesse Immobilier,2022-04-04
+225, Sidy code diagne,2021-02-17
+226,Sésame Immobilier ,2015-12-04
+227, Ndour Alassane Immo,2017-01-30
+228,sunnaa immo,2012-02-20
+229,CABINET IMMOBILIER LE COLISÉE,2018-11-25
+230,Business Development Center SARL,2014-05-07
+231,Daouda,2022-01-30
+232,Mamadou Lamine DiakitÃ©,2015-03-12
+233,Sarr lat,2020-07-16
+234, CERCLE DE L' IMMOBILIER,2020-08-12
+235,Elite Mobilier ,2015-04-15
+236,Wétinsy,2021-05-01
+237,Defo Cisse,2018-09-11
+238,JURILUXE IMMO,2016-04-01
+239,Centre du meuble Italien,2013-11-11
+240,Immobilier Pierre,2019-05-20
+241,Adam,2022-02-04
+242,Nourou daarayni,2020-07-03
+243,RÃ©fÃ©rence Habitat ,2018-09-17
+244, 2S IMMOBILIER,2017-02-01
+245,Olivier Diouf,2022-02-12
+246,Sidy code diagne,2021-02-17
+247, Facely Immobilier,2013-12-18
+248, Madame Diongue,2021-12-20
+249,KEITA,2019-12-17
+250,MISTER KA,2018-10-10
+251,GILLES LITZENBURGER,2013-09-12
+252,l&#39;immobilier au senegal ,2021-03-09
+253,L'AFRICAINE DE L'IMMOBILIER,2016-09-25
+254,agence citron vert,2010-02-10
+255,seydou correa,2011-05-13
+256,KEUR IMMO SENEGAL ,2019-01-10
+257, KEBE IMMOBILIER,2021-05-05
+258,Amadou Lamine Tall ,2017-09-25
+259,MISTER KA ,2018-10-10
+260,Moustapha,2013-01-30
+261,Inov Immo,2011-08-13
+262,lino Kov,2018-04-10
+263,Audrey Irie,2021-10-22
+264,BAT IMMO,2019-02-19
+265, Immobiliere Excellence,2017-11-16
+266,Hans Goslinga,2022-04-17
+267,Ndeye Fatou Thiam ,2018-05-09
+268, Olivier Diouf,2022-02-12
+269,La Courtière ,2019-04-12
+270,Mohamed Sanou ,2021-05-12
+271,ICOM SENEGAL(iso sene),2011-09-13
+272,Ngagne Ndiaye,2022-04-15
+273,KANE IMMO,2021-03-18
+274,Agence citron vert,2010-02-10
+275, Sarr lat,2020-07-16
+276,Cercle de l'immobilier,2020-08-12
+277,Oumy ,2021-10-13
+278,Pierre Pierre,2015-02-23
+279,Terra Nova,2012-10-05
+280,Ibrahima Dianko ,2022-03-16
+281, Sen prix bas,2010-06-13
+282, Mohamed Sanou,2021-05-12
+283,TERANGA PACK,2019-12-23
+284, NDAO NEGOCE INTERNATIONAL,2022-01-09
+285,STANDINGIMMOBILIER HANN MARISTE SARL ,2015-10-07
+286,ADSL APPARTS HOTEL,2015-06-29
+287,Limaldo Immo,2020-12-11
+288,NAING ADAMA,2022-04-22
+289, Hans Goslinga,2022-04-24
+290, Residences Amani,2020-05-23
+291, INSA IMMO,2015-02-26
+292, GILLES LITZENBURGER,2013-09-12
+293,Cercle de l'immobilier ,2020-08-12
+294, Saidou sarr,2020-05-06
+295, La Sénégalaise de L'immobilier,2010-12-02
+296,LA SIGNATURE IMMOBILIERE,2020-01-27
+297, BAT IMMO,2019-02-19
+298, Ousseynou Ndiaye,2021-05-12
+299,Moustapha gueye ,2014-08-12
+300,Sané nfally ,2022-03-08
+301, DADDY IMMO,2017-05-28
+302,GIE FAGUEYE ,2015-11-25
+303, Welcom-immobilier,2013-02-27
+304,BALDE,2021-10-23
+305,Habitat Square immobilier ,2014-08-12
+306,Building Group,2021-03-18
+307,assane barry,2015-01-20
+308,Kema House,2020-02-13
+309,Idrissa diop,2022-04-29
+310,Kenza,2020-06-15
+311,LA SIGNATURE IMMOBILIERE ,2020-01-27
+312,Agence Keur Nafi ,2020-05-04
+313,Tgv immobilier,2021-05-18
+314,Immosen ,2015-08-28
+315,Cid immobilier ,2016-01-11
+316,Mme DIENG ,2017-01-18
+317, MIJF,2020-12-07
+318,Mme Sidibe,2021-03-31
+319,INSA IMMO ,2015-02-26
+320,Olivier Diouf ,2022-02-12
+321,paco tounkara ,2010-09-03
+322,Silvino Gomes,2022-05-04
+323,Adama,2022-05-06
+324, Eden Immo Saly,2020-07-04
+325,Pape Diop,2019-11-08
+326,ILEMA,2021-06-13
+327,IMMO CONSEIL,2011-02-02
+328,Global Properties,2014-12-08
+329,Souleymane,2021-08-04
+330,Immobilier la Lagune ,2015-02-03
+331,kola pascal,2011-09-17
+332, Nazim bencheikh Lehocine,2022-03-31
+333,Michel BARZASI ,2019-02-12
+334, ALMAU Services,2021-11-25
+335,Alioune Badara Sene,2015-10-31
+336, l&#39;immobilier au senegal,2021-03-09
+337, NVIBUILDING21,2016-01-22
+338,Ndiaye Ousseynou,2022-05-17
+339, Le Courtier de Dakar,2021-04-27
+340,Amina,2020-04-14
+341,Kam Business Groupe,2015-11-27
+342, Limaldo Immo,2020-12-11
+343,Deltic immo,2012-04-09
+344,CERCLE DE L'IMMOBILIER,2020-08-12
+345,Oudina Immo,2014-06-06
+346,Mr Felix,2017-09-26
+347,Sen Immo Prestige,2021-05-03
+348,La Résidence ,2010-01-12
+349,Finesse Immobilier ,2022-04-04
+350,Babacar DIOUF ,2014-12-10
+351,Sidy Samba,2018-04-26
+352,GROUPE ALPHA,2022-04-12
+353,Aswa Immo,2022-05-21
+354, NDAS,2021-11-04
+355,SCI SBS Immolux,2021-09-09
+356, Cabinet la casa construction,2019-04-03
+357, Pape Diop,2019-11-08
+358, LA SIGNATURE IMMOBILIERE,2020-01-27
+359,TALUX GROUP,2016-12-07
+360, Arcade Cap,2021-09-23
+361,Khadij dia,2019-04-10
+362,Meublé Inc.,2020-07-28
+363,Mamadou Niang,2020-09-08
+364,Diallo Oumou,2021-03-26
+365,MEUBLE DAKAR MARISTE,2015-03-10
+366,Sall Mamadou,2021-01-27
+367,Dakar Express,2019-01-28
+368, Cabinet Foncier Immobilier,2018-04-24
+369,Synial immo,2016-10-14
+370,Badiane Amadou,2017-03-16
+371,Agence Angel ,2011-02-25
+372,Cabinet Foncier Immobilier ,2018-04-24
+373,Kane Abou,2019-08-26
+374,Saidou sarr ,2020-05-06
+375,Mansour Camara ,2015-01-21
+376, STANDINGIMMOBILIER HANN MARISTE SARL,2015-10-07
+377, cabinet seti,2019-11-20
+378,CAMARA,2021-09-26
+379,Pro Immo Services,2018-10-22
+380,Tim Fall DiOP,2018-08-14
+381,Opportunities Group immobilier,2020-12-29
+382,Fofana douare,2022-04-15
+383,Terra Nova ,2012-10-05
+384,MID SERVICES,2018-04-20
+385,Sylla Mayelle,2022-03-14
+386,DIBOR TEUW,2017-02-08
+387,kinika dao,2012-03-03
+388,Seydi Moukhtar DIOKHANE,2018-06-20
+389,mr mls,2016-01-05
+390,BEST ARCHI BÂT AFRIQUE ,2019-05-23
+391,3S Investissement ,2017-07-10
+392,Saliou SAMBE,2022-01-21
+393,ALMAU Services ,2021-11-25
+394,SENEGALAISE DE L&#39;IMMOBILIER,2010-12-02
+395,Acma,2020-08-27
+396,PAPE TOUKI,2019-10-08
+397,El hadji Parking,2019-01-03
+398, Aswa Immo,2022-05-14
+399, La Courtière,2019-04-12
+400, Immobilier la Lagune,2015-02-03
+401,Amsy hotel,2021-09-17
+402,Adama faye,2022-05-07
+403,install'toit,2016-12-18
+404,GM. Coll,2018-07-31
+405,Fazby,2018-06-17
+406, Saliou SAMBE,2022-01-21
+407,Solutions immobilieres,2013-12-22
+408,sadou oumarou,2011-07-12
+409,Bachir idrissa bagayoko,2022-01-10
+410,Immob,2022-06-08
+411, Alassane SALL,2017-07-25
+412, Cheikhna DoucourÃ©,2020-01-16
+413,Awabac ,2022-02-06
+414,Puissance immo,2022-02-22
+415,Cisse immo,2022-06-08
+416,DEMA IMMOBILIER,2019-06-11
+417, Cisse immo,2022-06-08
+418, Babacar DIOUF,2014-12-10
+419, CABINET IMMOBILIER LE COLISÉE,2018-11-25
+420,Mouhamed ndiaye,2016-12-21
+421,Global Immo Business et Services,2019-09-23
+422,Eden Immo Saly ,2020-07-04
+423,Dk Patrick,2022-06-10
+424,hakouna business,2021-04-29
+425,ALRISSALAH,2021-04-07
+426,VLADIMIRðŸ‡·ðŸ‡ºBUSINESS,2019-04-23
+427,Wandifa Global Service,2019-09-09
+428,MAXSOLUTIONS,2015-01-19
+429,facely Kamara,2013-12-18
+430,Innovation Shop,2014-02-24
+431,MICHO RESIDENCE,2022-05-06
+432,Mbd archi,2021-10-16
+433,DAKAR MOTORS PRO-SUARL,2022-03-09
+434,AVENIR INVEST SN,2017-01-14
+435,Mohamed FALL,2020-05-11
+436, JURILUXE IMMO,2016-04-01
+437,Mohamed Sylla,2013-05-24
+438,Welcom-immobilier ,2013-02-27
+439,Mame Diarra Sylla,2022-06-16
+440,Patrick,2021-11-12
+441,ImEx Group,2017-03-02
+442,Saliou Fall,2021-05-11
+443, Agence Moysha,2013-01-23
+444,PIERRE IMMOBILIER,2019-05-20
+445,Moustapha Fall,2017-08-02
+446,RESIDENCE FRED,2018-11-02
+447,Alpha,2021-12-25
+448,Cheikhna DoucourÃ© ,2020-01-16
+449,Agence immobilière LE PAKAO TRADING,2017-04-12
+450, NgonÃ© Thiandoum,2018-01-24
+451,Gully Giresse BAKOFA KELOUTEU,2014-01-31
+452,Cabinet la casa construction ,2019-04-03
+453,Galsen business ,2021-04-23
+454,Pinth Consortium,2022-04-29
+455,Ets Sadikh Immo,2017-02-17
+456,Aminata NDAO,2022-06-24
+457,AGENCE IMMOBILIERE DU SENEGAL,2022-05-03
+458, Moustapha Fall,2017-08-02
+459,Exception immo ,2021-08-17
+460,IMBS,2018-07-22
+461,SENEGALAISE DE L&#39;IMMOBILIER ,2010-12-02
+462,DYWANES DYWANES,2017-06-23
+463,Sn Immo,2021-02-25
+464,M. THIAM ,2022-01-19
+465,Junabdi IMMO,2014-08-17
+466,MKJ Immo,2021-04-08
+467,Nova Group,2022-05-19
