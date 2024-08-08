@@ -1,21 +1,20 @@
-# Projet final 
+# Projet final
 
-## Petit rappel: La normalisation des bases 
+## Petit rappel: La normalisation des bases
 
-La normalisation est un concept important dans les bases de données pour s'assurer de l'organisation et de la cohérence de la structure de notre base de donnée. Nous avons 3 formes normales essentiellement. 
+La normalisation est un concept important dans les bases de données pour s'assurer de l'organisation et de la cohérence de la structure de notre base de donnée. Nous avons 3 formes normales essentiellement.
 
-### 1ère forme normale (1FN) 
+### 1ère forme normale (1FN)
 
-But: 
+But:
 
 * Éliminer la répétition de groupes dans les différentes tables.
 * Créer une table distincte pour chaque jeu de données connexes.
 * Identifier chaque jeu de données connexes à l’aide d’une clé primaire.
 
-Exemple: 
+Exemple:
 
-Pour assurer le suivi d’un article en stock pouvant provenir de deux sources différentes, un enregistrement de stock peut contenir des champs pour le code fournisseur 1 et le code fournisseur 2. Si on veut ajouter un autre fournisseur, on aura à modifier les tables et aussi le programme. Donc conformément à la 1FN, nous allons une table fournisseur pour stocker les fournisseurs à l'aide de leur code 
-
+Pour assurer le suivi d’un article en stock pouvant provenir de deux sources différentes, un enregistrement de stock peut contenir des champs pour le code fournisseur 1 et le code fournisseur 2. Si on veut ajouter un autre fournisseur, on aura à modifier les tables et aussi le programme. Donc conformément à la 1FN, nous allons une table fournisseur pour stocker les fournisseurs à l'aide de leur code
 
 ### 2e forme normale (2FN)
 
@@ -28,9 +27,7 @@ Donc ici les enregistrement ne dependent que de la clé primaire de la table
 
 Exemple:
 
-Si on veut enregistrer l'addresse client dans un système de comptabilité par exemple, cette addresse sera importante pour la table **client** mais pas que, elle sera aussi dans les tables commandes, expedition, facture ... Donc il faudra une table addresse dont la clé primaire sera utilisé comme clé étrangère dans toutes les autres tables. 
-
-
+Si on veut enregistrer l'addresse client dans un système de comptabilité par exemple, cette addresse sera importante pour la table **client** mais pas que, elle sera aussi dans les tables commandes, expedition, facture ... Donc il faudra une table addresse dont la clé primaire sera utilisé comme clé étrangère dans toutes les autres tables.
 
 ### 3e forme normale (3FN)
 
@@ -44,18 +41,15 @@ Exemple:
 
 Pour le recrutement d'un employé, on souhaiterait enregistrer l'université de provenance de l'employé mais ici.
 
-Par exemple si on souhaite une liste des universités qui n'ont pas d'employé dans notre base alors on ne peut le savoir. Il faudra donc créer une table des universités. 
+Par exemple si on souhaite une liste des universités qui n'ont pas d'employé dans notre base alors on ne peut le savoir. Il faudra donc créer une table des universités.
 
 Exception:
 
-La 3FN bien souhaitable théoriquement n'est souvent pas souhaitable. 
+La 3FN bien souhaitable théoriquement n'est souvent pas souhaitable.
 
 Comme exemple, si vous possédez une table Clients et souhaitez éliminer toutes les dépendances interchamps possibles, vous devez créer des tables distinctes pour les villes, les codes postaux, les représentants de commerce, les classes de clientèle et tout autre facteur pouvant être dupliqué dans plusieurs enregistrements.
 
-
 Vous pouvez vous entrainer sur l'exemple ici : [https://learn.microsoft.com/fr-fr/office/troubleshoot/access/database-normalization-description](FN)
-
-
 
 Bon bref, on s'arrête ici pour ce petit rappel bien que long mais très important pour la suite....
 
@@ -81,11 +75,14 @@ A la suite de ce projet, vous devez être à mesure de:
 ## Problématique
 
 Un promoteur immobilier residant à Abidjan souhaiterait diversifier ces activités et s'étendre. Pour cette extension son choix s'est porté sur la ville de Dakar.
-Il commence l'étude de marché. Pour avoir une étude de marché plus poussée, il souhaite faire appel à votre expertise et vous fourni plusieurs données sur toutes les annonces de l'immobilier dans cette ville. 
+Il commence l'étude de marché. Pour avoir une étude de marché plus poussée, il souhaite faire appel à votre expertise et vous fourni plusieurs données sur toutes les annonces de l'immobilier dans cette ville.
 
-Il faudra donc utiliser ces données pour lui fournir toutes les raisons pour s'installer ou pas à Dakar. 
+Il faudra donc utiliser ces données pour lui fournir toutes les raisons pour s'installer ou pas à Dakar.
 
 ## Consignes
 
-1. A partir des données fournies, etablir une base de données cohérentes (MLD, MCD et MPD) à partir des règles que nous avons vu sur les bases et des principes de normalisations
-2. Publiez ce résultat sur Felt
+1. **Analyse fonctionnel de la problématique:** A partir des données fournies, etablir une base de données cohérentes (MLD, MCD et MPD) à partir des règles que nous avons vu sur les bases et des principes de normalisations
+2. **Analyse et traitement des données immobilières:**
+   * Importer les données nécessaires
+   * 
+3. **Présentation des résultats:**

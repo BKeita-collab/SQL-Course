@@ -94,7 +94,7 @@ SELECT pub.annee_publication, SUM(p.prix) AS total_prix_annuel
 	ORDER BY (total_prix_annuel) DESC
 
 --- regrouper tous les élements dans annonces all
-CREATE VIEW annonces_view AS 
+CREATE TABLE projet.annonces_all AS 
 	(
 	SELECT a.*, v.id_vendeur, v.nom, v.abonnement, 
 	pub.date_publication, pub.annee_publication,
@@ -112,6 +112,9 @@ CREATE VIEW annonces_view AS
 
 --- Pour le reste du projet, nous travaillerons avec l'année où il y'a eu le plus de vente 
 
+
+
+	
 -- determiner l'année avec le plus de vente
 
 SELECT pub.annee_publication, SUM(p.prix) AS total_prix_annuel
@@ -123,6 +126,17 @@ SELECT pub.annee_publication, SUM(p.prix) AS total_prix_annuel
 	ORDER BY (total_prix_annuel) DESC
 	LIMIT 1
 
+	
+--- Annonnce 2022
+
+
+CREATE TABLE projet.annonces_2022 AS 
+	(
+	SELECT * 
+		FROM projet.annonces_all
+		WHERE annee_publication = 2022
+	)
+
 -- verifier les géométries des tables localisationn et commune 
 
 SELECT * ,ST_ISVALIDREASON(geom) 
@@ -133,16 +147,71 @@ SELECT * ,ST_ISVALIDREASON(geom)
 	FROM projet.localisation
 	WHERE NOT ST_ISVALID(geom)
 
--- 
+-- Creation d'index spatial 
+-- les index spatiales permettent de réduire considerablement les temps de calculs des opérations sur 
+-- les opérateurs Bounding Box 
+
+CREATE INDEX gist_annonce ON projet.annonces_all USING GIST (geom);
+
+CREATE INDEX gist_annonce2022 ON projet.annonces_2022 USING GIST (geom);
+
+CREATE INDEX gist_annonce ON projet.annonces_all USING GIST (geom);
 
 
+-- Determiner spatialement où il y'a plus de mouvement immobilière
+SELECT com.code_commune, com.commune ,  COUNT(a.id_annonce) AS nombre_annonces
+	FROM projet.annonces_2022 AS a INNER JOIN projet.gadm_commune AS com
+	ON ST_Contains(com.geom, a.geom)
+	GROUP BY (com.code_commune, com.commune)
 
+-- Determiner alors les 5 communes où le coût de l'immobilier est le plus élévé
+SELECT com.code_commune, com.commune ,  ROUND(AVG(a.prix)) AS prix_moyen
+	FROM projet.annonces_2022 AS a INNER JOIN projet.gadm_commune AS com
+	ON ST_Contains(com.geom, a.geom)
+	GROUP BY (com.code_commune, com.commune)
+	ORDER BY prix_moyen DESC
+	LIMIT 5
 
+--- Dans le reste du projet de trouver quelques indicateurs qui ont de l'infu
+-- Importer les données: route_SN et aeroport_SN
 
+--shp2pgsql SQL-Course/data/Projet final/route_SN.shp gadm_commune -s 4326 -I | psql -U postgres -d projet_final
+--shp2pgsql SQL-Course/data/Projet final/aeroport.shp gadm_commune -s 4326 -I | psql -U postgres -d projet_final
 
+---- Impact des routes sur le prix 
+	
+--Déterminer pour chaque commune la longueur des troncons de route et donc la densité de route
+CREATE INDEX gist_route ON projet."route_SN" USING GIST (geom);
+CREATE INDEX gist_route_senegal ON projet.route_senegal USING GIST (geom);
 
+CREATE VIEW projet.route_par_commune AS (
+SELECT com.code_commune, com.commune , SUM(ST_Length(route.geom)) AS longueur_route_m
+	FROM projet.gadm_commune AS com INNER JOIN projet.route_senegal AS route
+	ON ST_Contains(com.geom, route.geom)
+	GROUP BY (com.code_commune, com.commune)
+	ORDER BY  longueur_route_m DESC)
 
+CREATE VIEW projet.prix_commune AS(
+SELECT com.code_commune, com.commune ,  ROUND(AVG(a.prix)) AS prix_moyen
+	FROM projet.annonces_2022 AS a INNER JOIN projet.gadm_commune AS com
+	ON ST_Contains(com.geom, a.geom)
+	GROUP BY (com.code_commune, com.commune)
+	ORDER BY prix_moyen DESC )
 
+-- Pour déterminer le poids de la longueur des routes sur l'immobilier 
+
+SELECT 
+	prix_commune.code_commune, 
+	prix_commune.commune , 
+	prix_commune.prix_moyen,
+	route_par_commune.longueur_route_m, 
+	AVG (prix_commune.prix_moyen / prix_commune.prix_moyen + route_par_commune.longueur_route_m) AS rapport_prix_route
+	FROM projet.prix_commune
+	INNER JOIN projet.route_par_commune 
+	ON prix_commune.code_commune = route_par_commune.code_commune
+	GROUP BY (prix_commune.code_commune, prix_commune.commune, prix_commune.prix_moyen,route_par_commune.longueur_route_m )
+	ORDER BY rapport_prix_route DESC
+	--LIMIT 5
 
 
 
