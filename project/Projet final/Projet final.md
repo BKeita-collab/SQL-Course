@@ -12,9 +12,10 @@ But:
 * Créer une table distincte pour chaque jeu de données connexes.
 * Identifier chaque jeu de données connexes à l’aide d’une clé primaire.
 
-Exemple:
+Exemple: 
 
-Pour assurer le suivi d’un article en stock pouvant provenir de deux sources différentes, un enregistrement de stock peut contenir des champs pour le code fournisseur 1 et le code fournisseur 2. Si on veut ajouter un autre fournisseur, on aura à modifier les tables et aussi le programme. Donc conformément à la 1FN, nous allons une table fournisseur pour stocker les fournisseurs à l'aide de leur code
+Pour assurer le suivi d’un article en stock pouvant provenir de deux sources différentes, un enregistrement de stock peut contenir des champs pour le code fournisseur 1 et le code fournisseur 2. Si on veut ajouter un autre fournisseur, on aura à modifier les tables et aussi le programme. Donc conformément à la 1FN, nous allons une table fournisseur pour stocker les fournisseurs à l'aide de leur code 
+
 
 ### 2e forme normale (2FN)
 
@@ -27,7 +28,9 @@ Donc ici les enregistrement ne dependent que de la clé primaire de la table
 
 Exemple:
 
-Si on veut enregistrer l'addresse client dans un système de comptabilité par exemple, cette addresse sera importante pour la table **client** mais pas que, elle sera aussi dans les tables commandes, expedition, facture ... Donc il faudra une table addresse dont la clé primaire sera utilisé comme clé étrangère dans toutes les autres tables.
+Si on veut enregistrer l'addresse client dans un système de comptabilité par exemple, cette addresse sera importante pour la table **client** mais pas que, elle sera aussi dans les tables commandes, expedition, facture ... Donc il faudra une table addresse dont la clé primaire sera utilisé comme clé étrangère dans toutes les autres tables. 
+
+
 
 ### 3e forme normale (3FN)
 
@@ -41,15 +44,18 @@ Exemple:
 
 Pour le recrutement d'un employé, on souhaiterait enregistrer l'université de provenance de l'employé mais ici.
 
-Par exemple si on souhaite une liste des universités qui n'ont pas d'employé dans notre base alors on ne peut le savoir. Il faudra donc créer une table des universités.
+Par exemple si on souhaite une liste des universités qui n'ont pas d'employé dans notre base alors on ne peut le savoir. Il faudra donc créer une table des universités. 
 
 Exception:
 
-La 3FN bien souhaitable théoriquement n'est souvent pas souhaitable.
+La 3FN bien souhaitable théoriquement n'est souvent pas souhaitable. 
 
 Comme exemple, si vous possédez une table Clients et souhaitez éliminer toutes les dépendances interchamps possibles, vous devez créer des tables distinctes pour les villes, les codes postaux, les représentants de commerce, les classes de clientèle et tout autre facteur pouvant être dupliqué dans plusieurs enregistrements.
 
+
 Vous pouvez vous entrainer sur l'exemple ici : [https://learn.microsoft.com/fr-fr/office/troubleshoot/access/database-normalization-description](FN)
+
+
 
 Bon bref, on s'arrête ici pour ce petit rappel bien que long mais très important pour la suite....
 

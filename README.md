@@ -1,6 +1,9 @@
 # SQL-Course
+<<<<<<< HEAD
 Ce cours est destiné à l'apprentissage des bases de données spatiales pour débutant et intermédiaire. 
 >>>>>>> e6515b0... Objectifs de la formation
+=======
+>>>>>>> 593777e7ac30f71508aad75c8f89ba40b8c7fc8f
 
 Ce cours est destiné à l'apprentissage des bases de données spatiales pour débutant et intermédiaire.
 
@@ -35,8 +38,11 @@ Pas de préréquis à avoir juste votre motivation
 * QGIS dernière version stable
 * VSCode (Facultatif)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> update-course
 =======
 >>>>>>> e6515b0... Objectifs de la formation
 =======
 >>>>>>> 04b880d... Initial commit
+=======
+>>>>>>> 593777e7ac30f71508aad75c8f89ba40b8c7fc8f
